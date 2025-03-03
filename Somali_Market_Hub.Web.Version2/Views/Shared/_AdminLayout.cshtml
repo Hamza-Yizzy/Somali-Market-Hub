@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap -->
+    <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link href="~/gentelella-master/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="~/gentelella-master/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="~/gentelella-master/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="~/gentelella-master/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Datatables -->
+    <link href="~/gentelella-master/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="~/gentelella-master/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="~/gentelella-master/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="~/gentelella-master/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="~/gentelella-master/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="~/gentelella-master/build/css/custom.min.css" rel="stylesheet">
+
+
+    <!-- Tailwand CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Admin Panel</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
+    <style>
+        /* Sidebar styles */
+        #wrapper {
+            display: flex;
+        }
+
+        #sidebar-wrapper {
+            min-width: 250px;
+            max-width: 250px;
+            height: 100vh;
+            background-color: #343a40;
+            position: fixed;
+        }
+
+            #sidebar-wrapper .list-group-item {
+                border: none;
+                color: white;
+            }
+
+                #sidebar-wrapper .list-group-item:hover {
+                    background-color: #495057;
+                }
+
+        /* Page Content */
+        #page-content-wrapper {
+            flex-grow: 1;
+            padding-left: 260px;
+            width: 100%;
+        }
+
+        #menu-toggle {
+            margin-left: 15px;
+        }
+
+        /* Toggle Sidebar */
+        #wrapper.toggled #sidebar-wrapper {
+            display: none;
+        }
+
+        @@media (max-width: 768px) {
+            #wrapper.toggled #sidebar-wrapper {
+                display: block;
+            }
+
+            #page-content-wrapper {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-dark border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading text-white text-center py-3">Admin Panel</div>
+            <div class="list-group list-group-flush">
+                <a asp-controller="Admin" asp-action="Dashboard" class="list-group-item list-group-item-action text-white bg-dark">Dashboard</a>
+                <a asp-controller="Admin" asp-action="UsersList" class="list-group-item list-group-item-action text-white bg-dark">Manage Users</a>
+                <a asp-controller="Orders" asp-action="Index" class="list-group-item list-group-item-action text-white bg-dark">Orders</a>
+                <a asp-controller="Reports" asp-action="Index" class="list-group-item list-group-item-action text-white bg-dark">Reports</a>
+                <a asp-controller="Settings" asp-action="Index" class="list-group-item list-group-item-action text-white bg-dark">Settings</a>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            @* <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-dark" id="menu-toggle">☰</button>
+                <div class="ml-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Admin" asp-action="Profile">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" asp-controller="Auth" asp-action="Logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav> *@
+
+            <div class="container-fluid mt-4">
+                <main role="main">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-muted text-center py-3 mt-4">
+        <div class="container">
+            &copy; 2025 - Admin Panel - Somali_Market_Hub
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/admin.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        // Toggle sidebar menu
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("wrapper").classList.toggle("toggled");
+        });
+
+
+
+
+            <!-- jQuery -->
+        <script src="~//gentelella-master/endors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="~/gentelella-master/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="~/gentelella-master/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="~/gentelella-master/vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="~/gentelella-master/vendors/iCheck/icheck.min.js"></script>
+    <!-- Datatables -->
+    <script src="~/gentelella-master/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/gentelella-master/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="~/gentelella-master/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/gentelella-master/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="~/gentelella-master/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="~/gentelella-master/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/gentelella-master/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="~/gentelella-master/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="~/gentelella-master/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="~/gentelella-master/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/gentelella-master/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="~/gentelella-master/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="~/gentelella-master/vendors/jszip/dist/jszip.min.js"></script>
+    <script src="~/gentelella-master/vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="~/gentelella-master/vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="~/gentelella-master/build/js/custom.min.js"></script>
+    </script>
+</body>
+</html>

@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using Somali_Market_Hub.Web.Version2.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<SMHDbContext>(options =>
+options.UseSqlServer(builder.Configuration
+.GetConnectionString("SMHDBConnectionString")));
 
 var app = builder.Build();
 
