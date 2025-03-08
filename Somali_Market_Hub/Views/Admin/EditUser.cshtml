@@ -1,0 +1,58 @@
+﻿@model Somali_Market_Hub.Models.User
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Modifying User Page";
+}
+<h2>Edit User</h2>
+<form asp-action="EditUser" method="post">
+    <label>ID</label>
+    <input type="text" asp-for="Id" class="form-control" readonly />
+
+    <label>Full Name</label>
+    <input type="text" asp-for="FullName" class="form-control" required />
+
+    <label>Email</label>
+    <input type="email" asp-for="Email" class="form-control" required />
+
+    <label>Username</label>
+    <input type="text" asp-for="Username" class="form-control" required />
+
+    <label>Role</label>
+    <select asp-for="Role" class="form-control" id="roleSelection" onchange="toggleFields()" disabled>
+        <option value="Admin">Admin</option>
+        <option value="Provider">Provider</option>
+        <option value="Customer">Customer</option>
+    </select>
+
+    <div id="providerFields" style="display: none;">
+        <label>Business Name (For Providers)</label>
+        <input type="text" asp-for="BusinessName" class="form-control" />
+
+        <label>Business Logo (For Providers)</label>
+        <input type="text" asp-for="BusinessLogo" class="form-control" />
+
+        <label>Location (For Providers)</label>
+        <input type="text" asp-for="Location" class="form-control" />
+
+        <label>Delivery Available (For Providers)</label>
+        <select asp-for="DeliveryAvailable" class="form-control">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>
+
+<script>
+    function toggleFields() {
+        var role = document.getElementById("roleSelection").value;
+        var providerFields = document.getElementById("providerFields");
+
+        providerFields.style.display = role === "Provider" ? "block" : "none";
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        toggleFields(); // Ensure fields are shown correctly based on user role on page load
+    });
+</script>

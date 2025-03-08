@@ -1,0 +1,72 @@
+﻿@model Somali_Market_Hub.Models.User
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "User Registration Page";
+}
+<h2>Register User</h2>
+<form asp-action="RegisterUser" method="post">
+    <label>Full Name</label>
+    <input type="text" asp-for="FullName" class="form-control" required />
+
+    <label>Email</label>
+    <input type="email" asp-for="Email" class="form-control" required />
+
+    <label>Username</label>
+    <input type="text" asp-for="Username" class="form-control" required />
+
+    <label>Password</label>
+    <input type="password" asp-for="Password" class="form-control" required />
+
+    <label>Role</label>
+    <select asp-for="Role" class="form-control" id="roleSelection" onchange="toggleFields()">
+        <option value="Admin">Admin</option>
+        <option value="Provider">Provider</option>
+        <option value="Customer">Customer</option>
+    </select>
+
+    <div id="idField" style="display: none;">
+        <label>ID</label>
+        <input type="text" asp-for="Id" id="Id" class="form-control" readonly />
+    </div>
+
+    <div id="providerFields" style="display: none;">
+        <label>Business Name (For Providers)</label>
+        <input type="text" asp-for="BusinessName" class="form-control" />
+
+        <label>Business Logo (For Providers)</label>
+        <input type="text" asp-for="BusinessLogo" class="form-control" />
+
+        <label>Location (For Providers)</label>
+        <input type="text" asp-for="Location" class="form-control" />
+
+        <label>Delivery Available (For Providers)</label>
+        <select asp-for="DeliveryAvailable" class="form-control">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+<script>
+    async function fetchLatestId(role) {
+        const response = await fetch(`/Admin/GetLatestId?role=${role}`);
+        const data = await response.text();
+        return data;
+    }
+
+    async function toggleFields() {
+        var role = document.getElementById("roleSelection").value;
+        var providerFields = document.getElementById("providerFields");
+        var idField = document.getElementById("idField");
+        var idInput = document.getElementById("Id");
+
+        providerFields.style.display = role === "Provider" ? "block" : "none";
+        idField.style.display = role ? "block" : "none";
+
+        if (role) {
+            idInput.value = await fetchLatestId(role);
+        }
+    }
+</script>
