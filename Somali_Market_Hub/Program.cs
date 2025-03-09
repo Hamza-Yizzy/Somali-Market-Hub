@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Somali_Market_Hub.Data;
+using Somali_Market_Hub.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<SMHDbContext>(options =>
 options.UseSqlServer(builder.Configuration
 .GetConnectionString("SMHConnectionString")));
+
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
 
@@ -24,7 +27,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Admin}/{action=ListUsers}/{id?}")
     .WithStaticAssets();
 
 

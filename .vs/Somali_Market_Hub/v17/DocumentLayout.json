@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\views\\admin\\registeruser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\views\\admin\\registeruser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\views\\admin\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\views\\admin\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\views\\admin\\listusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\views\\admin\\listusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\views\\admin\\registeruser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\views\\admin\\registeruser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4E7C901-D6BD-4CDC-8C1E-84D6EA6BDEC5}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -54,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -64,7 +56,7 @@
               "RelativeDocumentMoniker": "Somali_Market_Hub\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Somali_Market_Hub\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAADwv0QAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwDMAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-08T18:52:41.297Z",
               "IsPinned": true,
@@ -72,85 +64,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Program.cs",
-              "RelativeDocumentMoniker": "Somali_Market_Hub\\Program.cs",
-              "ToolTip": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Program.cs",
-              "RelativeToolTip": "Somali_Market_Hub\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T18:58:30.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\appsettings.json",
-              "RelativeDocumentMoniker": "Somali_Market_Hub\\appsettings.json",
-              "ToolTip": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\appsettings.json",
-              "RelativeToolTip": "Somali_Market_Hub\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-08T18:58:25.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "EditUser.cshtml",
               "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Views\\Admin\\EditUser.cshtml",
               "RelativeDocumentMoniker": "Somali_Market_Hub\\Views\\Admin\\EditUser.cshtml",
               "ToolTip": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Views\\Admin\\EditUser.cshtml",
               "RelativeToolTip": "Somali_Market_Hub\\Views\\Admin\\EditUser.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAQwDoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-08T18:58:05.877Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "ListUsers.cshtml",
               "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Views\\Admin\\ListUsers.cshtml",
               "RelativeDocumentMoniker": "Somali_Market_Hub\\Views\\Admin\\ListUsers.cshtml",
               "ToolTip": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Views\\Admin\\ListUsers.cshtml",
               "RelativeToolTip": "Somali_Market_Hub\\Views\\Admin\\ListUsers.cshtml",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAQwHsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-08T18:57:43.181Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "RegisterUser.cshtml",
               "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Views\\Admin\\RegisterUser.cshtml",
               "RelativeDocumentMoniker": "Somali_Market_Hub\\Views\\Admin\\RegisterUser.cshtml",
               "ToolTip": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Views\\Admin\\RegisterUser.cshtml",
               "RelativeToolTip": "Somali_Market_Hub\\Views\\Admin\\RegisterUser.cshtml",
-              "ViewState": "AgIAADEAAAAAAAAAAAAQwEcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAIwEMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-08T18:57:09.926Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "_AdminLayout.cshtml",
               "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Views\\Shared\\_AdminLayout.cshtml",
               "RelativeDocumentMoniker": "Somali_Market_Hub\\Views\\Shared\\_AdminLayout.cshtml",
               "ToolTip": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Views\\Shared\\_AdminLayout.cshtml",
               "RelativeToolTip": "Somali_Market_Hub\\Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAQwLUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAYwIIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-08T18:56:47.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Repository\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Somali_Market_Hub\\Repository\\IUserRepository.cs",
@@ -158,12 +124,11 @@
               "RelativeToolTip": "Somali_Market_Hub\\Repository\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T18:55:52.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T18:55:52.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "Somali_Market_Hub\\Repository\\UserRepository.cs",
@@ -171,12 +136,11 @@
               "RelativeToolTip": "Somali_Market_Hub\\Repository\\UserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T18:55:27.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T18:55:27.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Models\\User.cs",
               "RelativeDocumentMoniker": "Somali_Market_Hub\\Models\\User.cs",
@@ -184,12 +148,11 @@
               "RelativeToolTip": "Somali_Market_Hub\\Models\\User.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAUwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T18:54:32.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T18:54:32.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "SMHDbContext.cs",
               "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Data\\SMHDbContext.cs",
               "RelativeDocumentMoniker": "Somali_Market_Hub\\Data\\SMHDbContext.cs",
@@ -197,8 +160,7 @@
               "RelativeToolTip": "Somali_Market_Hub\\Data\\SMHDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T18:54:08.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T18:54:08.357Z"
             }
           ]
         }

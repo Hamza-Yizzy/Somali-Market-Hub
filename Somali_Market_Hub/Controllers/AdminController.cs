@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Somali_Market_Hub.Models;
 using Somali_Market_Hub.Repositories;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Somali_Market_Hub.Controllers
@@ -47,6 +49,7 @@ namespace Somali_Market_Hub.Controllers
         {
             if (ModelState.IsValid)
             {
+                user.Password = HashPassword(user.Password);
                 await _userRepository.AddUserAsync(user);
                 return RedirectToAction("ListUsers");
             }
@@ -87,6 +90,18 @@ namespace Somali_Market_Hub.Controllers
             await _userRepository.DeleteUserAsync(id);
             return Ok(new { message = "User deleted successfully." });
         }
-
+        public string HashPassword(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2")); // Convert bytes to hexadecimal
+                }
+                return builder.ToString();
+            }
+        }
     }
 }

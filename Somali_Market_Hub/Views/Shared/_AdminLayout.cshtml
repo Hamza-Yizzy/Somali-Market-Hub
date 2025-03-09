@@ -2,28 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @* <!-- Bootstrap -->
-    <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
-    <link href="~/Content/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="~/Content/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- NProgress -->
-    <link href="~/Content/vendors/nprogress/nprogress.css" rel="stylesheet">
-    <!-- iCheck -->
-    <link href="~/Content/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
-    <!-- Datatables -->
-    <link href="~/Content/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="~/Content/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
-    <link href="~/Content/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
-    <link href="~/Content/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
-    <link href="~/Content/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Theme Style -->
-    <link href="~/Content/build/css/custom.min.css" rel="stylesheet"> *@
-
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    Flowbite using CSS CDN
+    @* Flowbite using CSS CDN *@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 
     <meta charset="UTF-8">
@@ -129,43 +110,11 @@
             </div>
         </aside>
 
-
-
-
         <!-- Main Content -->
         <div class="flex-1 p-6 sm:ml-64">
             @RenderBody()
         </div>
 
-        @* <!-- jQuery -->
-        <script src="~/Content/vendors/jquery/dist/jquery.min.js"></script>
-        <!-- Bootstrap -->
-        <script src="~/Content/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- FastClick -->
-        <script src="~/Content/vendors/fastclick/lib/fastclick.js"></script>
-        <!-- NProgress -->
-        <script src="~/Content/vendors/nprogress/nprogress.js"></script>
-        <!-- iCheck -->
-        <script src="~/Content/vendors/iCheck/icheck.min.js"></script>
-        <!-- Datatables -->
-        <script src="~/Content/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
-        <script src="~/Content/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-        <script src="~/Content/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-        <script src="~/Content/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
-        <script src="~/Content/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
-        <script src="~/Content/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
-        <script src="~/Content/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
-        <script src="~/Content/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
-        <script src="~/Content/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-        <script src="~/Content/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-        <script src="~/Content/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
-        <script src="~/Content/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
-        <script src="~/Content/vendors/jszip/dist/jszip.min.js"></script>
-        <script src="~/Content/vendors/pdfmake/build/pdfmake.min.js"></script>
-        <script src="~/Content/vendors/pdfmake/build/vfs_fonts.js"></script>
-
-        <!-- Custom Theme Scripts -->
-        <script src="~/Content/build/js/custom.min.js"></script> *@
 
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -173,7 +122,7 @@
 
         @*Flowbite using JS CDN *@
         <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@9.0.3"></script>
         @await RenderSectionAsync("Scripts", required: false)
     </div>
 </body>
