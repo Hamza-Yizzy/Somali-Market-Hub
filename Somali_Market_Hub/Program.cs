@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using Somali_Market_Hub.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<SMHDbContext>(options =>
+options.UseSqlServer(builder.Configuration
+.GetConnectionString("SMHConnectionString")));
+
 
 var app = builder.Build();
 
@@ -18,7 +25,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Admin}/{action=CreateUser}/{id?}")
     .WithStaticAssets();
 
 

@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\models\\auth models\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\models\\auth models\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\controllers\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\controllers\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\data\\smhdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\data\\smhdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\models\\auth models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\models\\auth models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|c:\\users\\e-hamza-sdd\\desktop\\asp-projects\\somali_market_hub\\somali_market_hub\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{539396EA-FB4E-4EEF-9417-9EA7CB92867C}|Somali_Market_Hub\\Somali_Market_Hub.csproj|solutionrelative:somali_market_hub\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +42,105 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Views\\Admin\\CreateUser.cshtml",
+              "RelativeDocumentMoniker": "Somali_Market_Hub\\Views\\Admin\\CreateUser.cshtml",
+              "ToolTip": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Views\\Admin\\CreateUser.cshtml",
+              "RelativeToolTip": "Somali_Market_Hub\\Views\\Admin\\CreateUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-09T18:28:37.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Controllers\\Admin.cs",
+              "RelativeDocumentMoniker": "Somali_Market_Hub\\Controllers\\Admin.cs",
+              "ToolTip": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Controllers\\Admin.cs",
+              "RelativeToolTip": "Somali_Market_Hub\\Controllers\\Admin.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAwG8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T18:07:51.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Models\\Auth Models\\Role.cs",
+              "RelativeDocumentMoniker": "Somali_Market_Hub\\Models\\Auth Models\\Role.cs",
+              "ToolTip": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Models\\Auth Models\\Role.cs",
+              "RelativeToolTip": "Somali_Market_Hub\\Models\\Auth Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T18:00:12.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserAccount.cs",
+              "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Models\\Auth Models\\UserAccount.cs",
+              "RelativeDocumentMoniker": "Somali_Market_Hub\\Models\\Auth Models\\UserAccount.cs",
+              "ToolTip": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Models\\Auth Models\\UserAccount.cs",
+              "RelativeToolTip": "Somali_Market_Hub\\Models\\Auth Models\\UserAccount.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T17:46:33.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\appsettings.json",
+              "RelativeDocumentMoniker": "Somali_Market_Hub\\appsettings.json",
+              "ToolTip": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\appsettings.json",
+              "RelativeToolTip": "Somali_Market_Hub\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-09T17:45:23.406Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Program.cs",
+              "RelativeDocumentMoniker": "Somali_Market_Hub\\Program.cs",
+              "ToolTip": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Program.cs",
+              "RelativeToolTip": "Somali_Market_Hub\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwBUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T17:44:41.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Somali_Market_Hub\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Somali_Market_Hub\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvxgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-09T17:44:20.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "SMHDbContext.cs",
               "DocumentMoniker": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Data\\SMHDbContext.cs",
               "RelativeDocumentMoniker": "Somali_Market_Hub\\Data\\SMHDbContext.cs",
               "ToolTip": "C:\\Users\\E-Hamza-SDD\\Desktop\\ASP-Projects\\Somali_Market_Hub\\Somali_Market_Hub\\Data\\SMHDbContext.cs",
               "RelativeToolTip": "Somali_Market_Hub\\Data\\SMHDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwCMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T16:24:43.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T16:24:43.072Z"
             }
           ]
         }

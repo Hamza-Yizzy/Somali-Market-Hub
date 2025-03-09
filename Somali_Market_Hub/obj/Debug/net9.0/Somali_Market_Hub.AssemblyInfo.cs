@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Somali_Market_Hub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e48886501ce2edfdb3e374b4af1557f52c5cd19a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Somali_Market_Hub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Somali_Market_Hub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

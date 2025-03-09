@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Somali_Market_Hub.props" />
+</Project>
