@@ -55,6 +55,34 @@ namespace Somali_Market_Hub.Controllers
             ViewData["Roles"] = new SelectList(context.Tbl_Roles, "Id", "Name");
             return View();
         }
+
+        // Helper function to generate the next ID
+        public string GenerateUserId(int roleId)
+        {
+            string prefix = roleId switch
+            {
+                1 => "SA",  // Admin
+                2 => "SP",  // Provider
+                3 => "SC",  // Customer
+                _ => "XX"   // Unknown Role
+            };
+
+            var lastUser = context.Tbl_UserAccounts
+                .Where(u => u.RoleId == roleId)
+                .OrderByDescending(u => u.Id)
+                .FirstOrDefault();
+
+            int nextNumber = lastUser != null ? int.Parse(lastUser.Id.Substring(2)) + 1 : 1;
+            return $"{prefix}{nextNumber:D2}";
+        }
+
+        [HttpGet]
+        public IActionResult GetNextUserId(int roleId)
+        {
+            string newId = GenerateUserId(roleId);
+            return Json(new { userId = newId });
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateUser([Bind("Id, FullName, Email, UserName, Password, RoleId, BusinessName, Location")] UserAccount account, IFormFile photoFile)
@@ -79,7 +107,7 @@ namespace Somali_Market_Hub.Controllers
             return View(account);
         }
         
-        public async Task<IActionResult> EditUser(int id)
+        public async Task<IActionResult> EditUser(string id)
         {
             ViewData["Roles"] = new SelectList(context.Tbl_Roles, "Id", "Name");
             var edit = await context.Tbl_UserAccounts.FirstOrDefaultAsync(i => i.Id == id);
@@ -87,29 +115,43 @@ namespace Somali_Market_Hub.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EditUser([Bind("Id, FullName, Email, UserName, Password, RoleId, BusinessName, Location")] UserAccount account, IFormFile photoFile)
+        public async Task<IActionResult> EditUser(string id, [Bind("Id, FullName, Email, UserName, Password, RoleId, BusinessName, Location")] UserAccount account, IFormFile photoFile)
         {
-            if (ModelState.IsValid)
+            // ✅ Ensure the entity exists before updating
+            var existingUser = await context.Tbl_UserAccounts.FindAsync(id);
+            if (existingUser == null)
             {
-                if (photoFile != null && photoFile.Length > 0)
-                {
-                    using (var memoryStream = new MemoryStream())
-                    {
-                        await photoFile.CopyToAsync(memoryStream);
-                        account.BusinessLogo = memoryStream.ToArray(); // Convert image to byte array
-                    }
-                }
-
-                account.Password = HashPassword(account.Password);
-
-                context.Tbl_UserAccounts.Update(account);
-                await context.SaveChangesAsync();
-                return RedirectToAction("UsersList");
+                return NotFound(); // User doesn't exist
             }
-            return View(account);
+
+            // ✅ Update only modified fields
+            existingUser.FullName = account.FullName;
+            existingUser.Email = account.Email;
+            existingUser.UserName = account.UserName;
+            existingUser.RoleId = account.RoleId;
+            existingUser.BusinessName = account.BusinessName;
+            existingUser.Location = account.Location;
+
+            if (!string.IsNullOrEmpty(account.Password))
+            {
+                existingUser.Password = HashPassword(account.Password); // Hash new password if changed
+            }
+
+            if (photoFile != null && photoFile.Length > 0)
+            {
+                using (var memoryStream = new MemoryStream())
+                {
+                    await photoFile.CopyToAsync(memoryStream);
+                    existingUser.BusinessLogo = memoryStream.ToArray();
+                }
+            }
+
+            await context.SaveChangesAsync();
+            return RedirectToAction("UsersList");
         }
+
         [HttpPost]
-        public async Task<IActionResult> DeleteUser(int id)
+        public async Task<IActionResult> DeleteUser(string id)
         {
             var users = await context.Tbl_UserAccounts.FirstOrDefaultAsync(i => i.Id == id);
             if (users != null)

@@ -29,8 +29,7 @@ namespace Somali_Market_Hub.Migrations
                 name: "Tbl_UserAccounts",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -60,6 +59,12 @@ namespace Somali_Market_Hub.Migrations
                     { 2, "Provider" },
                     { 3, "Customer" }
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Tbl_UserAccounts_Id",
+                table: "Tbl_UserAccounts",
+                column: "Id",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Tbl_UserAccounts_RoleId",

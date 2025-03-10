@@ -1,0 +1,51 @@
+﻿@model List<Somali_Market_Hub.Models.UserAccount>
+@{
+    ViewData["Title"] = "Users List Page";
+}
+
+<table class="table table-hover">
+    <thead>
+        <tr class ="table-primary">
+            <th scope="col">ID</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Role</th>
+            <th scope="col">Business Name</th>
+            <th scope="col">Business Logo</th>
+            <th scope="col">Business Location</th>
+            <th scope="col">Edit</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in Model)
+        {
+            <tr class="table-info">
+                <th scope="row">@user.Id</th>
+                <td>@user.FullName</td>
+                <td>@user.Email</td>
+                <td>@user.UserName</td>
+                <td>@user.Roles?.Name</td>
+                <td>@user.BusinessName</td>
+                <td>
+                    @if (user.BusinessLogo != null)
+                    {
+                        <img src="@Url.Action("GetImage", "Admin", new { id = user.Id })" width="200" height="200" />
+                    }
+                    else
+                    {
+                        <span>No Image</span>
+                    }
+                </td>
+                <td>@user.Location</td>
+                <td>
+                    <a asp-action="EditUser" asp-route-id="@user.Id">
+                        Edit
+                    </a>
+                </td>
+            </tr>
+        }
+        
+    </tbody>
+</table>
+

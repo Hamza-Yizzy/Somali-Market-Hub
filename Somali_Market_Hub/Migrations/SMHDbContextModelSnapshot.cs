@@ -57,11 +57,8 @@ namespace Somali_Market_Hub.Migrations
 
             modelBuilder.Entity("Somali_Market_Hub.Models.UserAccount", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<byte[]>("BusinessLogo")
                         .HasColumnType("varbinary(max)");
@@ -94,6 +91,9 @@ namespace Somali_Market_Hub.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Id")
+                        .IsUnique();
 
                     b.HasIndex("RoleId");
 
